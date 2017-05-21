@@ -40,5 +40,9 @@ Route::group(['prefix'=>'admins'],function(){
     Route::get('pruebados', function() {
         return view('about');
     })->name("admin.prueba2");
+
+    Route::get('blog', 'blog\CommentController@index' )->name("admin.blog");
     
 });
+
+
