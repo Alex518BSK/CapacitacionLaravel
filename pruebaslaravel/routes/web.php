@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/more/5/perrito', function () {
+    return view('about');
+});
+Route::get('/more/{id}/{name}', function ($id,$name) {
+    return "este es un numero ". $id." ".$name;
+});
