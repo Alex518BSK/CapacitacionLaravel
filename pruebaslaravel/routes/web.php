@@ -21,3 +21,7 @@ Route::get('/more/5/perrito', function () {
 Route::get('/more/{id}/{name}', function ($id,$name) {
     return "este es un numero ". $id." ".$name;
 });
+Route::get('admin/poster/example',array('as' => 'admin.home', function(){
+    $url=route('admin.home');
+    return "this url is ". $url;
+}));
