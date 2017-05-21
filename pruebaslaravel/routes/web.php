@@ -41,7 +41,7 @@ Route::group(['prefix'=>'admins'],function(){
         return view('about');
     })->name("admin.prueba2");
 
-    Route::get('blog', 'blog\CommentController@index' )->name("admin.blog");
+    Route::get('blog/{id}/{nombre}/{edad}', 'blog\CommentController@index' )->name("admin.blog");
     
 });
 
